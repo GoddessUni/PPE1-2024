@@ -1,0 +1,139 @@
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Les urls</title>
+    </head>
+<body>
+    <h1>URLs</h1>
+    <!--bouton pour changer les langues-->
+    <div class="buttons">
+        <button onclick="showTable('english')">English</button>
+        <button onclick="showTable('chinese')">中文</button>
+        <button onclick="showTable('french')">Français</button>
+    </div>
+
+    <!--French-->
+    <table id="french" class="active">
+        <h2>Les urls pour le mot "Racine"</h2>
+        <tr>
+            <th>Numéro</th>
+            <th>Catégorie</th>
+            <th>Lien</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Botanique</td>
+            <td>https://fr.wikipedia.org/wiki/Racine_(botanique)</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mathématique</td>
+            <td>https://fr.wikipedia.org/wiki/Racine_d%27un_nombre</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Linguistique</td>
+            <td>https://fr.wikipedia.org/wiki/Racine_et_radical_(linguistique)</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Informatique</td>
+            <td>https://fr.wikipedia.org/wiki/Arbre_enraciné</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Médecine</td>
+            <td>https://fr.wikipedia.org/wiki/Racine_nerveuse</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Médecine</td>
+            <td>https://fr.wikipedia.org/wiki/Racine_dentaire</td>
+        </tr>
+         <tr>
+            <td>7</td>
+             <td>Mathématique</td>
+             <td>https://fr.wikipedia.org/wiki/Racine_d%27un_polynôme</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Informatique</td>
+            <td>https://fr.wikipedia.org/wiki/Répertoire_racine</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Personnage</td>
+            <td>https://fr.wikipedia.org/wiki/Jean_Racine</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Sens multiples</td>
+            <td>https://www.larousse.fr/dictionnaires/francais/racine/65928</td>
+        </tr>
+    </table>
+
+    <!--chinese-->
+    <table id="chinese">
+        <h2>词汇“根”的网页链接</h2>
+        <tr>
+            <th>编号</th>
+            <th>类别</th>
+            <th>网页链接</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>植物</td>
+            <td>https://zh.wikipedia.org/wiki/根</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>数学</td>
+            <td>https://zh.wikipedia.org/wiki/根_(数学)</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>数学</td>
+            <td>hhttps://zh.wikipedia.org/wiki/方根</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>哲学</td>
+            <td>https://baike.baidu.com/item/根源/18555790</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>哲学</td>
+            <td>https://www.zdic.net/hans/根源</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>多义词</td>
+            <td>https://www.zdic.net/hans/根</td>
+        </tr>
+         <tr>
+            <td>7</td>
+             <td>多义词</td>
+             <td>https://zh.wiktionary.org/wiki/根</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>植物</td>
+            <td>http://www.kepu.net.cn/gb/lives/plantae/html/137.htm</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>植物</td>
+            <td>http://lyylj.gz.gov.cn/kpyd/ylcs/content/post_7729015.html</td>
+        </tr>
+    </table>
+
+    <script>
+        function showTable(tableID){
+            document.querySelectorAll('table').forEach(table =>{
+                table.classList.remove('active');
+            });
+            document.getElementById(tableID).classList.add('active');
+        }
+    </script>
+</body>
+</html>
